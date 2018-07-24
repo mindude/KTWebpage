@@ -45963,13 +45963,61 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var react_bootstrap_1 = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
 var LandingPage = /** @class */ (function (_super) {
     __extends(LandingPage, _super);
     function LandingPage() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     LandingPage.prototype.render = function () {
-        return (React.createElement("h1", null, "This is the main page"));
+        return (React.createElement(react_bootstrap_1.Grid, { bsClass: "", fluid: true },
+            React.createElement(react_bootstrap_1.Image, { src: "images/Barfront.gif", alt: "banner", responsive: true }),
+            React.createElement(react_bootstrap_1.Col, { sm: 12, className: "landingPage" },
+                React.createElement("br", null),
+                React.createElement("div", { className: "video-container" },
+                    React.createElement("iframe", { width: "1080", height: "720", allowFullScreen: true, frameBorder: "0", src: "https://www.youtube.com/embed/oGIrB5tw7Po" })),
+                React.createElement("h1", null,
+                    React.createElement("div", { className: "text-center" },
+                        React.createElement("p", null, "Hello fellow Bartender!"),
+                        React.createElement("p", null, "Ready to run your own business in your own bar?")),
+                    React.createElement("div", null,
+                        React.createElement(react_bootstrap_1.Media, null,
+                            React.createElement(react_bootstrap_1.Media.Left, null,
+                                React.createElement(react_bootstrap_1.Image, { width: 500, height: 300, src: "/images/Screenshot.png" })),
+                            React.createElement(react_bootstrap_1.Media.Body, null,
+                                React.createElement("p", null,
+                                    "Be able to make your own drinks. ",
+                                    React.createElement("br", null),
+                                    "The possibilities are limitless!"))),
+                        React.createElement(react_bootstrap_1.Media, null,
+                            React.createElement(react_bootstrap_1.Media.Left, null,
+                                React.createElement(react_bootstrap_1.Image, { width: 500, height: 300, src: "/images/Screenshot1.png" })),
+                            React.createElement(react_bootstrap_1.Media.Body, null,
+                                React.createElement("p", null,
+                                    "A lot of people to meet! ",
+                                    React.createElement("br", null),
+                                    "Some of them might have more to tell than others..."))),
+                        React.createElement(react_bootstrap_1.Media, null,
+                            React.createElement(react_bootstrap_1.Media.Left, null,
+                                React.createElement(react_bootstrap_1.Image, { width: 380, height: 300, src: "/images/buildings.gif" })),
+                            React.createElement(react_bootstrap_1.Media.Body, null,
+                                React.createElement("p", null,
+                                    "Customize your bar! ",
+                                    React.createElement("br", null),
+                                    "It is yours, after all."))),
+                        React.createElement(react_bootstrap_1.Media, null,
+                            React.createElement(react_bootstrap_1.Media.Left, null,
+                                React.createElement(react_bootstrap_1.Image, { width: 150, height: 300, src: "/images/mainCharClean.gif" })),
+                            React.createElement(react_bootstrap_1.Media.Body, null,
+                                React.createElement("p", null,
+                                    "A lot of features are coming up, ",
+                                    React.createElement("br", null),
+                                    "so make sure to check the page often.")))),
+                    React.createElement("div", { className: "text-center" },
+                        React.createElement("p", null,
+                            "Visit our blog for more details. ",
+                            React.createElement("br", null),
+                            "We make sure to update often, so don't miss out!"))))));
     };
     return LandingPage;
 }(React.Component));
